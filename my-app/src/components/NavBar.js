@@ -1,26 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 function NavBar() {
     return (
         <nav className="navbar">
-            <a href="/home" className="navbar-brand">
+            <Link to="/pages/Home" className="navbar-brand">
                 ToDoList
-            </a>
+            </Link>
             <div className="navbar-links">
-                <a href="../pages/Home.js" className="navbar-link">
+                <Link to="/pages/Home" className="navbar-link">
                     Home
-                </a>
-                <a href="../pages/Task" className="navbar-link">
+                </Link>
+                <Link to="/pages/Task" className="navbar-link">
                     Tasks
-                </a>
-                <a href="../pages/About" className="navbar-link">
+                </Link>
+                <Link to="/pages/About" className="navbar-link">
                     About
-                </a>
+                </Link>
             </div>
         </nav>
     );
 }
 
 export default NavBar;
-
