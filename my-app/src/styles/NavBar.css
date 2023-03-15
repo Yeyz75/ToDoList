@@ -1,9 +1,29 @@
 .navbar {
-    background: linear-gradient(to bottom, #1c7cd6, #000000);
-    height: 60px;
+    background-color: #24292e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    color: #fff;
+}
+
+.navbar-link {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-link:hover {
+    color: #0366d6;
 }
