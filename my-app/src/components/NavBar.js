@@ -11,7 +11,7 @@ function NavBar() {
                 <a href="/home" className="navbar-link">
                     Home
                 </a>
-                <a href="/tasks" className="navbar-link">
+                <a href="/task" className="navbar-link">
                     Tasks
                 </a>
                 <a href="/about" className="navbar-link">
