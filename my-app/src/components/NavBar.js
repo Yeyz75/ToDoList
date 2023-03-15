@@ -8,13 +8,13 @@ function NavBar() {
                 ToDoList
             </a>
             <div className="navbar-links">
-                <a href="/home" className="navbar-link">
+                <a href="../pages/Home.js" className="navbar-link">
                     Home
                 </a>
-                <a href="/task" className="navbar-link">
+                <a href="../pages/Task" className="navbar-link">
                     Tasks
                 </a>
-                <a href="/about" className="navbar-link">
+                <a href="../pages/About" className="navbar-link">
                     About
                 </a>
             </div>
