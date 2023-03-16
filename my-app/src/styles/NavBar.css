@@ -1,6 +1,7 @@
 .navbar {
     background-color: #24292e;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -10,11 +11,14 @@
     font-size: 28px;
     color: white;
     text-decoration: none;
+    margin-right: auto;
+    margin-left: 10px;
 }
 
 .navbar-links {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .navbar-link {
@@ -26,4 +30,46 @@
 
 .navbar-link:hover {
     color: #0366d6;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar-icon {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .navbar-icon:hover {
+        cursor: pointer;
+    }
+
+    .navbar-links.responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #24292e;
+        padding: 10px 0;
+        z-index: 1;
+    }
+
+    .navbar-links.responsive .navbar-link {
+        margin: 10px 0;
+    }
 }
