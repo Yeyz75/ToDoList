@@ -11,7 +11,7 @@ const Home = () => {
             </div>
             <div className="home-content">
                 <p>Stay organized and manage your tasks with ToDo List. Create a new task, mark it as complete, or delete it when it's no longer needed.</p>
-                <Link to="/task" className="home-btn">Get Started</Link>
+                <Link to="../pages/Task" className="home-btn">Get Started</Link>
             </div>
             <div className="home-features">
                 <h2>Features</h2>

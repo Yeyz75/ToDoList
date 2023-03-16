@@ -44,7 +44,7 @@ function Task() {
                     value={currentTask}
                     onChange={(e) => setCurrentTask(e.target.value)}
                 />
-                <button onClick={handleAddTask}>Add Task</button>
+                <button className="add-task" onClick={handleAddTask}>Add Task</button>
             </div>
             <div className="task-list-container">
                 <ul className="task-list">
@@ -52,9 +52,9 @@ function Task() {
                         <li key={index}>
                             {task}
                             <div className="task-buttons">
-                                <button onClick={() => handleCompleteTask(index)}>✓</button>
-                                <button onClick={() => handleEditTask(index)}>✎</button>
-                                <button onClick={() => handleDeleteTask(index)}>✕</button>
+                                <button className="complete-task" onClick={() => handleCompleteTask(index)}>✓</button>
+                                <button className="edit-task" onClick={() => handleEditTask(index)}>✎</button>
+                                <button className="delete-task" onClick={() => handleDeleteTask(index)}>✕</button>
                             </div>
                         </li>
                     ))}

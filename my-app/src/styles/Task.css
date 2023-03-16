@@ -1,133 +1,106 @@
 .task-container {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+}
+
+.task-input-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #F8F8F8;
+    margin-bottom: 1rem;
 }
 
-.task-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.task-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.task-header button {
-    background-color: #6f86d6;
-    color: #ffffff;
-    padding: 0.75rem 2rem;
+input[type="text"] {
+    padding: 1rem;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
 }
 
-.task-header button:hover {
-    background-color: #2C3E50;
-    color: #ffffff;
-}
-
-.task-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.task-form input[type="text"] {
-    width: 80%;
-    padding: 0.5rem;
-    margin-right: 0.5rem;
+button {
+    padding: 1rem;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
 }
 
-.task-form button {
-    background-color: #F2994A;
-    color: #FFFFFF;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+button.add-task {
+    background-color: #20bf6b;
+
 }
 
-.task-form button:hover {
-    background-color: #FFD166;
-    color: #2C3E50;
+button.add-task:hover {
+    background-color: #0fb75e;
+}
+
+button.complete-task {
+    background-color: #7bed9f;
+}
+
+button.complete-task:hover {
+    background-color: #2ecc71;
+}
+
+button.delete-task {
+    background-color: #eb3b5a;
+}
+
+button.delete-task:hover {
+    background-color: #e31b43;
+}
+
+button.edit-task {
+    background-color: #ff9f1a;
+}
+
+button.edit-task:hover {
+    background-color: #ff8c00;
+
 }
 
 .task-list {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.task-item {
+.task-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #61c2b2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
 }
 
-.task-item:hover {
-    background-color: #F5F5F5;
+.task-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.task-item input[type="checkbox"] {
-    margin-right: 0.5rem;
+.task-list li button {
+    margin-left: 1rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
-.task-item button {
-    background-color: #F2994A;
-    color: #FFFFFF;
-    padding: 0.25rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.task-item button:hover {
-    background-color: #FFD166;
-    color: #2C3E50;
-}
-
-.task-item.completed {
-    text-decoration: line-through;
-    color: #C2C2C2;
-}
-
-.task-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.task-footer button {
-    background-color: #F2994A;
-    color: #FFFFFF;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 0.25rem;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.task-footer button:hover {
-    background-color: #FFD166;
-    color: #2C3E50;
+.task-list li button:hover {
+    transform: scale(1.1);
 }
