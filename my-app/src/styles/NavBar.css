@@ -1,75 +1,102 @@
-.navbar {
-    background-color: #24292e;
+nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: #333;
+    color: #fff;
     padding: 10px;
+    position: relative;
 }
 
-.navbar-brand {
-    font-size: 28px;
-    color: white;
+.navbar-logo a {
+    font-size: 24px;
+    font-weight: bold;
     text-decoration: none;
-    margin-right: auto;
-    margin-left: 10px;
+    color: #fff;
 }
 
 .navbar-links {
     display: flex;
-    align-items: center;
-    margin-right: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-link {
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links li a {
     font-size: 16px;
+    text-decoration: none;
+    color: #fff;
 }
 
-.navbar-link:hover {
-    color: #0366d6;
+.navbar-hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.navbar-links-mobile {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+}
+
+.navbar-links-mobile.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-links-mobile li {
+    margin: 10px 0;
+}
+
+.navbar-links-mobile li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
     .navbar-links {
         display: none;
     }
 
-    .navbar-brand {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navbar {
-        justify-content: center;
-    }
-
-    .navbar-icon {
+    .navbar-hamburger {
         display: block;
-        margin-right: 10px;
     }
 
-    .navbar-icon:hover {
-        cursor: pointer;
+    .navbar-links-mobile {
+        display: none;
     }
 
-    .navbar-links.responsive {
+    .navbar-links-mobile.active {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #24292e;
-        padding: 10px 0;
-        z-index: 1;
-    }
-
-    .navbar-links.responsive .navbar-link {
-        margin: 10px 0;
     }
 }
