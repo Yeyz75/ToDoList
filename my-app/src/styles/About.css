@@ -1,0 +1,137 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6f86d6;
+    /* fallback for old browsers /
+    background: -webkit-linear-gradient(to right, #6f86d6, #48c6ef);
+    / Chrome 10-25, Safari 5.1-6 /
+    background: linear-gradient(to right, #6f86d6, #48c6ef);
+    / W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.25rem;
+}
+
+.about-features {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about-features h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-features li {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-team {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about-team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-team p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.about-contact {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-contact p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.about-btn {
+    background-color: #F2994A;
+    color: #FFFFFF;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+    background-color: #FFD166;
+    color: #2C3E50;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        padding: 0 10%;
+    }
+
+    .about-content p {
+        font-size: 1.5rem;
+    }
+
+    .about-features h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-features li {
+        font-size: 1.5rem;
+    }
+
+    .about-team h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-team p {
+        font-size: 1.5rem;
+    }
+
+    .about-contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-contact p {
+        font-size: 1.5rem;
+    }
+
+    .about-btn {
+        font-size: 1.25rem;
+    }
+}
