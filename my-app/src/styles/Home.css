@@ -63,11 +63,6 @@
     padding: 0;
 }
 
-.home-features li {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
 @media screen and (min-width: 768px) {
     .home-container {
         padding: 0 10%;
@@ -87,5 +82,16 @@
 
     .home-features li {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    .home-container {
+        padding: 0 5%;
+    }
+
+    .home-btn {
+        width: 100%;
     }
 }
